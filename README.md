@@ -1,6 +1,6 @@
 # Capstone-Project-24-2-R-1
 capstone project
-Final Project phase A introduction-
+Final Project introduction-
 24-2-R-1
 
 Presented by: 
