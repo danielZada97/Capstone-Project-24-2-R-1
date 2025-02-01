@@ -1,0 +1,143 @@
+/* 
+  Make sure the html, body, and #root take up the full height 
+  to allow flexible layouts.
+*/
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: sans-serif;
+  background: url("./backgroundImg.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 
+  .page-container flexes the content to the center. 
+  Using min-height: 100vh ensures the container 
+  will always fill the screen vertically.
+*/
+.page-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/*
+  .main-container is the main column for your content.
+  Use max-width so it doesn't get too large on big screens,
+  and width: 100% so it shrinks properly on small screens.
+*/
+.main-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(5px);
+  margin-right: 3%;
+  margin-bottom: 10%;
+}
+
+/* Headline styling */
+.main-container h1 {
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+}
+
+/*
+  The upload-box is now relative in size, 
+  with a max-width instead of fixed 300px.
+  This helps it respond to screen width changes.
+*/
+.upload-box {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  /* Helps maintain a square shape */
+  border: 2px dashed #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* Give a visual cue that it's clickable */
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* The placeholder content before uploading an image */
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make the placeholder icon scale down if the box is smaller */
+#uploadImg {
+  width: 80px;
+  height: 80px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.5rem;
+}
+
+#uploadText {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Preview image should scale within the box */
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position buttons in a row with some spacing */
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* General style for both "Choose File" and "Upload and Process" */
+.custom-file-upload,
+.upload_button {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover,
+.upload_button:hover {
+  background-color: #2980b9;
+}
+
+/* The container that holds the classification results */
+.result-container {
+  background-color: transparent;
+  border: 5px solid rgb(58, 163, 223);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  /* Make it take full width */
+  box-sizing: border-box;
+  margin-top: 1rem;
+  color: white;
+}

@@ -1,0 +1,18 @@
+.card {
+    text-align: center;
+    /* Adjust the alpha (last value) to control transparency */
+    background-color: rgba(255, 255, 255, 0.1);
+
+    /* Blurs the background behind the card */
+    backdrop-filter: blur(10px);
+
+    /* Optionally remove default card border and add a subtle box shadow */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    width: 60%;
+
+}

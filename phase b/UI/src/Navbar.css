@@ -1,0 +1,23 @@
+.navbar {
+    position: sticky;
+    overflow: hidden;
+    top: 0px;
+    z-index: 1000;
+    background-color: #ffffff !important;
+    border-bottom: 2px solid;
+    height: 80px;
+    border-bottom-color: rgb(99, 141, 200);
+}
+
+.navbar-brand img {
+    width: 100%px;
+
+    height: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+
+}
+
+.navbar .nav-item .nav-link {
+    color: black;
+}
