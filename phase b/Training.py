@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     EPOCHS = 50 if NOT_DEBUG else 2
-    LR = 2e-7
+    LR = 1e-5
     WD = 1e-2
     MAX_GRAD_NORM = 10
     USE_AMP = True
