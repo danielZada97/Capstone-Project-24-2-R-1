@@ -63,9 +63,9 @@ if __name__ == "__main__":
 
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     EPOCHS = 50 if NOT_DEBUG else 2
-    LR = 1e-5
+    LR = 1e-7
     WD = 1e-2
-    MAX_GRAD_NORM = 10
+    MAX_GRAD_NORM = 1
     USE_AMP = True
 
     # KFold config

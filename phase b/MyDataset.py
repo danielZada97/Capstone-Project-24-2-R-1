@@ -3,7 +3,7 @@ from torch.utils.data import Dataset
 from PIL import Image
 from glob import glob
 IMG_SIZE = [512, 512]
-IN_CHANS = 30
+IN_CHANS = 15
 
 
 class Mydataset(Dataset):
