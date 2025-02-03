@@ -14,3 +14,5 @@ In this project, we aim to classify MRI images to identify lumbar spine degenera
 In addition, we will employ transfer learning to optimize the learning process.
 
 Keywords: classification, DenseNet, hyper-parameters optimization, lumbar spine degeneration, MRI.
+
+kaggle dataset: https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/data
