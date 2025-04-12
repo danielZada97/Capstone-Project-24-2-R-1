@@ -12,6 +12,9 @@ Magnetic resonance imaging (MRI) scans are an important tool for doctors and pro
 One of the main reasons MRI interpretation and diagnosis take longer is the differences in opinions between doctors trained in different specialties, like neuroradiologists (NR) and musculoskeletal radiologists (MSK).
 In this project, we aim to classify MRI images to identify lumbar spine degenerations, helping doctors reduce interpretation time and provide faster diagnoses for patients. To do so, we will be using a convolutional neural network with DenseNet architecture for the classification process. DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters.
 In addition, we will employ transfer learning to optimize the learning process.
+results:
+![image](https://github.com/user-attachments/assets/331584a5-d0ab-44e7-a79b-eab672178952)
+demo:![image](https://github.com/user-attachments/assets/60fcab46-0937-4b87-b40f-9eacebf0802f)
 
 Keywords: classification, DenseNet, hyper-parameters optimization, lumbar spine degeneration, MRI.
 
